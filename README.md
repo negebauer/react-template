@@ -16,7 +16,7 @@ yarn start
 
 ### Acknowledgements
 
-This template is based on [@mrpatiwis](https://github.com/mrpatiwi) [FEUC App](https://github.com/open-source-uc/FEUC-mobile) and also the code behind [@negebauer](https://github.com/negebauer)'s site [negebauer.com](https://negebauer.com)
+This template is based on [@mrpatiwis](https://github.com/mrpatiwi)'s [FEUC App](https://github.com/open-source-uc/FEUC-mobile) and also the code behind [@negebauer](https://github.com/negebauer)'s site [negebauer.com](https://negebauer.com)
 
 <!-- Badges -->
 
