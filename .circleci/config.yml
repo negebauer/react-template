@@ -1,0 +1,71 @@
+defaults: &defaults
+  working_directory: ~/react-template
+  docker:
+    - image: circleci/node:8.5
+
+version: 2
+jobs:
+  dependencies:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+          - v1-cache-{{ checksum "package.json" }}
+          - v1-cache-
+      - run: yarn
+      - save_cache:
+          paths:
+            - node_modules
+            - yarn.lock
+          key: v1-cache-{{ checksum "package.json" }}
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - ./
+  test:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ./
+      - run: yarn test:ci
+      - store_test_results:
+          path: ./coverage
+      - store_artifacts:
+          path: ./coverage/junit.xml
+          destination: junit/junit.xml
+      - store_artifacts:
+          path: ./coverage/lcov-report
+          destination: coverage
+  lint:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ./
+      - run: yarn lint
+  deploy:
+    <<: *defaults
+    steps:
+      - checkout
+      - run: echo 'DEPLOY_NOT_IMPLEMENTED'
+
+workflows:
+  version: 2
+  workflow:
+      jobs:
+        - dependencies
+        - test:
+            requires:
+              - dependencies
+        - lint:
+            requires:
+              - dependencies
+        - deploy:
+            requires:
+              - test
+              - lint
+            filters:
+              branches:
+                only:
+                  - master
+                  - dev

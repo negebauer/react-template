@@ -1,0 +1,66 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "PORT=8080 react-scripts start",
+    "start": "yarn build ; source .env && serve -p $PORT -s build",
+    "build": "source .env && react-scripts build",
+    "lint": "eslint ./src index.js",
+    "lint:fix": "eslint --fix ./src index.js",
+    "lint:watch": "esw -w -f simple ./src index.js",
+    "test": "react-scripts test --env=jsdom",
+    "test:coverage": "CI=true react-scripts test --env=jsdom",
+    "test:ci": "react-scripts test --env=jsdom --coverage --testResultsProcessor=jest-junit"
+  },
+  "dependencies": {
+    "eslint-plugin-react": "^7.3.0",
+    "history": "^4.6.3",
+    "lodash": "^4.17.4",
+    "popsicle": "^9.1.0",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-helmet": "^5.1.3",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.1.2",
+    "react-router-dom": "^4.1.2",
+    "react-router-redux": "next",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^4.8.3",
+    "redux-promise-middleware": "4.2.1",
+    "redux-thunk": "^2.2.0",
+    "reselect": "^3.0.1",
+    "styled-components": "^2.1.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "enzyme": "^2.9.1",
+    "enzyme-to-json": "^1.5.1",
+    "eslint": "^3.19.0",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-plugin-babel": "^4.1.1",
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-watch": "^3.1.2",
+    "jest-enzyme": "^3.8.2",
+    "jest-junit": "^3.0.0",
+    "prettier": "^1.7.0",
+    "react-scripts": "0.9.5",
+    "react-test-renderer": "^15.6.1",
+    "redux-mock-store": "^1.2.3"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!<rootDir>/node_modules/",
+      "!src/index.js"
+    ]
+  },
+  "jest-junit": {
+    "output": "./coverage/junit.xml",
+    "usePathForSuiteName": "true",
+    "classNameTemplate": "",
+    "titleTemplate": "{title}"
+  }
+}
