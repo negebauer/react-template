@@ -11,7 +11,8 @@
     "lint:watch": "esw -w -f simple ./src index.js",
     "test": "react-scripts test --env=jsdom",
     "test:coverage": "CI=true react-scripts test --env=jsdom",
-    "test:ci": "react-scripts test --env=jsdom --coverage --testResultsProcessor=jest-junit"
+    "test:ci": "react-scripts test --env=jsdom --coverage --testResultsProcessor=jest-junit",
+    "deploy:github": "yarn build; gh-pages -d build -b master -m 'Github site deploy'"
   },
   "dependencies": {
     "eslint-plugin-react": "^7.3.0",
@@ -43,6 +44,7 @@
     "eslint-plugin-babel": "^4.1.1",
     "eslint-plugin-prettier": "^2.3.1",
     "eslint-watch": "^3.1.2",
+    "gh-pages": "^1.0.0",
     "jest-enzyme": "^3.8.2",
     "jest-junit": "^3.0.0",
     "prettier": "^1.7.0",
