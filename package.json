@@ -2,6 +2,7 @@
   "name": "web",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://negebauer.github.io/react-template",
   "scripts": {
     "dev": "PORT=8080 react-scripts start",
     "start": "yarn build ; source .env && serve -p $PORT -s build",
@@ -12,7 +13,7 @@
     "test": "react-scripts test --env=jsdom",
     "test:coverage": "CI=true react-scripts test --env=jsdom",
     "test:ci": "react-scripts test --env=jsdom --coverage --testResultsProcessor=jest-junit",
-    "deploy:github": "yarn build; gh-pages -d build -b gh-pages -m 'Github site deploy'"
+    "deploy:github": "yarn build; gh-pages -d build -m 'Github site deploy'"
   },
   "dependencies": {
     "eslint-plugin-react": "^7.3.0",
