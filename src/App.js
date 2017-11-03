@@ -15,7 +15,7 @@ const mapDispatchToProps = {
   hydrate,
 }
 
-class App extends Component {
+export class App extends Component {
   static propTypes = {
     store: PropTypes.object.isRequired,
     history: PropTypes.object.isRequired,

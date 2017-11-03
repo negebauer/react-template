@@ -1,3 +1,624 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<Connect(App)
+  history={
+    Object {
+      "action": "POP",
+      "block": [Function],
+      "createHref": [Function],
+      "go": [Function],
+      "goBack": [Function],
+      "goForward": [Function],
+      "length": 1,
+      "listen": [Function],
+      "location": Object {
+        "hash": "",
+        "pathname": "/",
+        "search": "",
+        "state": undefined,
+      },
+      "push": [Function],
+      "replace": [Function],
+    }
+  }
+  options={
+    Object {
+      "hydratation": Object {
+        "blacklist": Array [
+          "hydratation",
+          "router",
+        ],
+      },
+    }
+  }
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <App
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+    hydratation={
+      Object {
+        "done": true,
+      }
+    }
+    hydrate={[Function]}
+    options={
+      Object {
+        "hydratation": Object {
+          "blacklist": Array [
+            "hydratation",
+            "router",
+          ],
+        },
+      }
+    }
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
+    storeSubscription={
+      Subscription {
+        "listeners": Object {
+          "clear": [Function],
+          "get": [Function],
+          "notify": [Function],
+          "subscribe": [Function],
+        },
+        "onStateChange": [Function],
+        "parentSub": undefined,
+        "store": Object {
+          "dispatch": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+          Symbol(observable): [Function],
+        },
+        "unsubscribe": [Function],
+      }
+    }
+  >
+    <Provider
+      store={
+        Object {
+          "dispatch": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+          Symbol(observable): [Function],
+        }
+      }
+    >
+      <ConnectedRouter
+        history={
+          Object {
+            "action": "POP",
+            "block": [Function],
+            "createHref": [Function],
+            "go": [Function],
+            "goBack": [Function],
+            "goForward": [Function],
+            "length": 1,
+            "listen": [Function],
+            "location": Object {
+              "hash": "",
+              "pathname": "/",
+              "search": "",
+              "state": undefined,
+            },
+            "push": [Function],
+            "replace": [Function],
+          }
+        }
+      >
+        <Router
+          history={
+            Object {
+              "action": "POP",
+              "block": [Function],
+              "createHref": [Function],
+              "go": [Function],
+              "goBack": [Function],
+              "goForward": [Function],
+              "length": 1,
+              "listen": [Function],
+              "location": Object {
+                "hash": "",
+                "pathname": "/",
+                "search": "",
+                "state": undefined,
+              },
+              "push": [Function],
+              "replace": [Function],
+            }
+          }
+        >
+          <withRouter(Connect(Navigator))>
+            <Route
+              render={[Function]}
+            >
+              <Connect(Navigator)
+                history={
+                  Object {
+                    "action": "POP",
+                    "block": [Function],
+                    "createHref": [Function],
+                    "go": [Function],
+                    "goBack": [Function],
+                    "goForward": [Function],
+                    "length": 1,
+                    "listen": [Function],
+                    "location": Object {
+                      "hash": "",
+                      "pathname": "/",
+                      "search": "",
+                      "state": undefined,
+                    },
+                    "push": [Function],
+                    "replace": [Function],
+                  }
+                }
+                location={
+                  Object {
+                    "hash": "",
+                    "pathname": "/",
+                    "search": "",
+                    "state": undefined,
+                  }
+                }
+                match={
+                  Object {
+                    "isExact": true,
+                    "params": Object {},
+                    "path": "/",
+                    "url": "/",
+                  }
+                }
+              >
+                <Navigator
+                  history={
+                    Object {
+                      "action": "POP",
+                      "block": [Function],
+                      "createHref": [Function],
+                      "go": [Function],
+                      "goBack": [Function],
+                      "goForward": [Function],
+                      "length": 1,
+                      "listen": [Function],
+                      "location": Object {
+                        "hash": "",
+                        "pathname": "/",
+                        "search": "",
+                        "state": undefined,
+                      },
+                      "push": [Function],
+                      "replace": [Function],
+                    }
+                  }
+                  location={
+                    Object {
+                      "hash": "",
+                      "pathname": "/",
+                      "search": "",
+                      "state": undefined,
+                    }
+                  }
+                  match={
+                    Object {
+                      "isExact": true,
+                      "params": Object {},
+                      "path": "/",
+                      "url": "/",
+                    }
+                  }
+                >
+                  <styled.div>
+                    <div
+                      className="sc-gzVnrw kugQOZ"
+                    >
+                      <styled.div>
+                        <div
+                          className="sc-htoDjs ePHjYV"
+                        >
+                          <Styled(styled.div)>
+                            <styled.div
+                              className="sc-iwsKbI jQhHGA"
+                            >
+                              <div
+                                className="sc-iwsKbI jQhHGA sc-dnqmqq cbdZBN"
+                              >
+                                <NavLink
+                                  exact={true}
+                                  ignore={true}
+                                  label="React Template"
+                                  to="/"
+                                >
+                                  <Route
+                                    exact={true}
+                                    path="/"
+                                  >
+                                    <Styled(Link)
+                                      className=""
+                                      to="/"
+                                    >
+                                      <Link
+                                        className="sc-gqjmRU eNtcLP"
+                                        replace={false}
+                                        to="/"
+                                      >
+                                        <a
+                                          className="sc-gqjmRU eNtcLP"
+                                          href="/"
+                                          onClick={[Function]}
+                                        >
+                                          React Template
+                                        </a>
+                                      </Link>
+                                    </Styled(Link)>
+                                  </Route>
+                                </NavLink>
+                                <NavLink
+                                  label="Other 1"
+                                  to="/other1"
+                                >
+                                  <Route
+                                    path="/other1"
+                                  >
+                                    <Styled(Link)
+                                      className=""
+                                      to="/other1"
+                                    >
+                                      <Link
+                                        className="sc-gqjmRU eNtcLP"
+                                        replace={false}
+                                        to="/other1"
+                                      >
+                                        <a
+                                          className="sc-gqjmRU eNtcLP"
+                                          href="/other1"
+                                          onClick={[Function]}
+                                        >
+                                          Other 1
+                                        </a>
+                                      </Link>
+                                    </Styled(Link)>
+                                  </Route>
+                                </NavLink>
+                                <NavLink
+                                  label="Other 2"
+                                  to="/other2"
+                                >
+                                  <Route
+                                    path="/other2"
+                                  >
+                                    <Styled(Link)
+                                      className=""
+                                      to="/other2"
+                                    >
+                                      <Link
+                                        className="sc-gqjmRU eNtcLP"
+                                        replace={false}
+                                        to="/other2"
+                                      >
+                                        <a
+                                          className="sc-gqjmRU eNtcLP"
+                                          href="/other2"
+                                          onClick={[Function]}
+                                        >
+                                          Other 2
+                                        </a>
+                                      </Link>
+                                    </Styled(Link)>
+                                  </Route>
+                                </NavLink>
+                              </div>
+                            </styled.div>
+                          </Styled(styled.div)>
+                          <Styled(styled.div)>
+                            <styled.div
+                              className="sc-gZMcBi giNnHm"
+                            >
+                              <div
+                                className="sc-gZMcBi giNnHm sc-dnqmqq cbdZBN"
+                              >
+                                <NavLink
+                                  label="Accesos"
+                                  to="/go"
+                                >
+                                  <Route
+                                    path="/go"
+                                  >
+                                    <Styled(Link)
+                                      className=""
+                                      to="/go"
+                                    >
+                                      <Link
+                                        className="sc-gqjmRU eNtcLP"
+                                        replace={false}
+                                        to="/go"
+                                      >
+                                        <a
+                                          className="sc-gqjmRU eNtcLP"
+                                          href="/go"
+                                          onClick={[Function]}
+                                        >
+                                          Accesos
+                                        </a>
+                                      </Link>
+                                    </Styled(Link)>
+                                  </Route>
+                                </NavLink>
+                              </div>
+                            </styled.div>
+                          </Styled(styled.div)>
+                        </div>
+                      </styled.div>
+                      <Switch>
+                        <Route
+                          component={[Function]}
+                          computedMatch={
+                            Object {
+                              "isExact": true,
+                              "params": Object {},
+                              "path": "/",
+                              "url": "/",
+                            }
+                          }
+                          exact={true}
+                          location={
+                            Object {
+                              "hash": "",
+                              "pathname": "/",
+                              "search": "",
+                              "state": undefined,
+                            }
+                          }
+                          path="/"
+                        >
+                          <styled.div>
+                            <div
+                              className="sc-VigVT lnHQkM"
+                            >
+                              <HelmetWrapper
+                                defer={true}
+                                encodeSpecialCharacters={true}
+                              >
+                                <SideEffect(NullComponent)
+                                  defer={true}
+                                  encodeSpecialCharacters={true}
+                                  title="React Template"
+                                  titleAttributes={Object {}}
+                                >
+                                  <NullComponent
+                                    defer={true}
+                                    encodeSpecialCharacters={true}
+                                    title="React Template"
+                                    titleAttributes={Object {}}
+                                  />
+                                </SideEffect(NullComponent)>
+                              </HelmetWrapper>
+                              <Route
+                                component={[Function]}
+                                computedMatch={
+                                  Object {
+                                    "isExact": true,
+                                    "params": Object {},
+                                    "path": "/",
+                                    "url": "/",
+                                  }
+                                }
+                                exact={true}
+                                location={
+                                  Object {
+                                    "hash": "",
+                                    "pathname": "/",
+                                    "search": "",
+                                    "state": undefined,
+                                  }
+                                }
+                                path="/"
+                              >
+                                <Connect(Home)
+                                  history={
+                                    Object {
+                                      "action": "POP",
+                                      "block": [Function],
+                                      "createHref": [Function],
+                                      "go": [Function],
+                                      "goBack": [Function],
+                                      "goForward": [Function],
+                                      "length": 1,
+                                      "listen": [Function],
+                                      "location": Object {
+                                        "hash": "",
+                                        "pathname": "/",
+                                        "search": "",
+                                        "state": undefined,
+                                      },
+                                      "push": [Function],
+                                      "replace": [Function],
+                                    }
+                                  }
+                                  location={
+                                    Object {
+                                      "hash": "",
+                                      "pathname": "/",
+                                      "search": "",
+                                      "state": undefined,
+                                    }
+                                  }
+                                  match={
+                                    Object {
+                                      "isExact": true,
+                                      "params": Object {},
+                                      "path": "/",
+                                      "url": "/",
+                                    }
+                                  }
+                                >
+                                  <Home
+                                    history={
+                                      Object {
+                                        "action": "POP",
+                                        "block": [Function],
+                                        "createHref": [Function],
+                                        "go": [Function],
+                                        "goBack": [Function],
+                                        "goForward": [Function],
+                                        "length": 1,
+                                        "listen": [Function],
+                                        "location": Object {
+                                          "hash": "",
+                                          "pathname": "/",
+                                          "search": "",
+                                          "state": undefined,
+                                        },
+                                        "push": [Function],
+                                        "replace": [Function],
+                                      }
+                                    }
+                                    location={
+                                      Object {
+                                        "hash": "",
+                                        "pathname": "/",
+                                        "search": "",
+                                        "state": undefined,
+                                      }
+                                    }
+                                    match={
+                                      Object {
+                                        "isExact": true,
+                                        "params": Object {},
+                                        "path": "/",
+                                        "url": "/",
+                                      }
+                                    }
+                                  >
+                                    <Styled(styled.div)>
+                                      <styled.div
+                                        className="sc-htpNat hTNTjW"
+                                      >
+                                        <div
+                                          className="sc-htpNat hTNTjW sc-bdVaJa cljovs"
+                                        >
+                                          <h1>
+                                            React Template
+                                          </h1>
+                                        </div>
+                                      </styled.div>
+                                    </Styled(styled.div)>
+                                  </Home>
+                                </Connect(Home)>
+                              </Route>
+                            </div>
+                          </styled.div>
+                        </Route>
+                      </Switch>
+                      <styled.div>
+                        <div
+                          className="sc-jTzLTM hrEXlU"
+                        >
+                          <Styled(styled.div)>
+                            <styled.div
+                              className="sc-jzJRlG enxKql"
+                            >
+                              <div
+                                className="sc-jzJRlG enxKql sc-fjdhpX gIIVcx"
+                              >
+                                <FooterLink
+                                  label="Google"
+                                  to="https://google.com"
+                                >
+                                  <styled.a
+                                    href="https://google.com"
+                                    target={true}
+                                  >
+                                    <a
+                                      className="sc-kAzzGY hWxvCe"
+                                      href="https://google.com"
+                                      target={true}
+                                    >
+                                      Google
+                                    </a>
+                                  </styled.a>
+                                </FooterLink>
+                              </div>
+                            </styled.div>
+                          </Styled(styled.div)>
+                          <Styled(styled.div)>
+                            <styled.div
+                              className="sc-cSHVUG CAuLq"
+                            >
+                              <div
+                                className="sc-cSHVUG CAuLq sc-fjdhpX gIIVcx"
+                              >
+                                <FooterLink
+                                  label="Github"
+                                  to="https://github.com/negebauer/react-template"
+                                >
+                                  <styled.a
+                                    href="https://github.com/negebauer/react-template"
+                                    target={true}
+                                  >
+                                    <a
+                                      className="sc-kAzzGY hWxvCe"
+                                      href="https://github.com/negebauer/react-template"
+                                      target={true}
+                                    >
+                                      Github
+                                    </a>
+                                  </styled.a>
+                                </FooterLink>
+                              </div>
+                            </styled.div>
+                          </Styled(styled.div)>
+                        </div>
+                      </styled.div>
+                    </div>
+                  </styled.div>
+                </Navigator>
+              </Connect(Navigator)>
+            </Route>
+          </withRouter(Connect(Navigator))>
+        </Router>
+      </ConnectedRouter>
+    </Provider>
+  </App>
+</Connect(App)>
+`;
+
 exports[`test matches snapshot 1`] = `
 <Connect(App)
   history={
