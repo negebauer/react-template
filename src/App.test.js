@@ -33,14 +33,14 @@ it("mount renders without crashing", () => {
   mount(<App {...defaultProps} />)
 })
 
-// it("render renders without crashing", () => {
-//   render(<App {...defaultProps} />)
-// })
+it("render renders without crashing", () => {
+  render(<App {...defaultProps} />)
+})
 
-// it("matches snapshot", () => {
-//   const wrapper = mount(<App {...defaultProps} />)
-//   expect(toJson(wrapper)).toMatchSnapshot()
-// })
+it("matches snapshot", () => {
+  const wrapper = mount(<App {...defaultProps} />)
+  expect(toJson(wrapper)).toMatchSnapshot()
+})
 
 // it("renders children", () => {
 // const wrapper = mount(
