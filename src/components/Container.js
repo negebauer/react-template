@@ -6,7 +6,9 @@ const Container = styled.div`
   flex-direction: column;
 `
 
-export const ContainerRow = styled(Container)`flex-direction: row;`
+export const ContainerRow = styled(Container)`
+  flex-direction: row;
+`
 
 export const ContainerCenter = styled(Container)`
   flex-direction: column;

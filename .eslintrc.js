@@ -27,6 +27,6 @@ module.exports = {
       trailingComma: "es5",
       semi: false,
     }],
-    semi: [1, 'never']
+    semi: [0, 'never']
   },
 };

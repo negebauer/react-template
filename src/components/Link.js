@@ -55,7 +55,9 @@ Link.propTypes = {
   href: PropTypes.string,
 }
 
-export const LinkPaddedStyle = styled.div`padding: 6px;`
+export const LinkPaddedStyle = styled.div`
+  padding: 6px;
+`
 
 export const LinkPadded = props => (
   <LinkPaddedStyle>
