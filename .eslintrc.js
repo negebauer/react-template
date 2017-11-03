@@ -3,6 +3,9 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2017,
     sourceType: "module",
+    "ecmaFeatures": {
+      "jsx": true
+    },
   },
   env: {
     es6: true,
@@ -24,6 +27,6 @@ module.exports = {
       trailingComma: "es5",
       semi: false,
     }],
-    semi: [1, 'never']
+    semi: [0, 'never']
   },
 };

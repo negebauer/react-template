@@ -124,7 +124,7 @@ const FooterHref = styled.a`
 `
 
 const FooterLink = ({ to, label }) => (
-  <FooterHref href={to} target>
+  <FooterHref href={to} target={"_blank"}>
     {label}
   </FooterHref>
 )

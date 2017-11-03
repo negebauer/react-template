@@ -11,14 +11,14 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-          - v1-cache-{{ checksum "package.json" }}
-          - v1-cache-
+          - v2-cache-{{ checksum "package.json" }}
+          - v2-cache-
       - run: yarn
       - save_cache:
           paths:
             - node_modules
             - yarn.lock
-          key: v1-cache-{{ checksum "package.json" }}
+          key: v2-cache-{{ checksum "package.json" }}
       - persist_to_workspace:
           root: ./
           paths:
