@@ -4,7 +4,7 @@
 import React from "react"
 import createHistory from "history/createBrowserHistory"
 import configureStore from "./redux/store"
-import { shallow, mount } from "enzyme"
+import { shallow, mount, render } from "enzyme"
 import toJson from "enzyme-to-json"
 import _ from "lodash/fp/object"
 import { App } from "./App"
@@ -13,39 +13,33 @@ let history
 let initialState
 let store
 let options
+let defaultProps
+let hydrate
 
 beforeEach(() => {
   history = createHistory()
   initialState = { hydratation: { done: true } }
   store = configureStore(initialState, history)
   options = { hydratation: { blacklist: ["hydratation", "router"] } }
+  hydrate = () => {}
+  defaultProps = { history, store, options, hydrate, ...initialState }
 })
 
 it("shallow renders without crashing", () => {
-  const hydrate = () => {}
-  shallow(
-    <App
-      store={store}
-      options={options}
-      history={history}
-      {...initialState}
-      hydrate={hydrate}
-    />
-  )
+  shallow(<App {...defaultProps} />)
 })
 
-it("mount renders without crashing", () => {
-  const hydrate = () => {}
-  mount(
-    <App store={store} options={options} history={history} hydrate={hydrate} />
-  )
-})
+// it("mount renders without crashing", () => {
+//   mount(<App {...defaultProps} />)
+// })
+
+// it("render renders without crashing", () => {
+//   render(<App {...defaultProps} />)
+// })
 
 // it("matches snapshot", () => {
-// const wrapper = mount(
-//   <App store={store} options={options} history={history} />
-// )
-// expect(toJson(wrapper)).toMatchSnapshot()
+//   const wrapper = mount(<App {...defaultProps} />)
+//   expect(toJson(wrapper)).toMatchSnapshot()
 // })
 
 // it("renders children", () => {
@@ -55,13 +49,8 @@ it("mount renders without crashing", () => {
 // expect(wrapper.children().exists()).toBeTruthy()
 // })
 
-// it("renders null when no hydratation", () => {
-//   const wrapper = mount(
-//     <App store={store} options={options} history={history} />
-//   )
-//   store.replaceReducer(state =>
-//     _.merge(state, { hydratation: { done: false } })
-//   )
-//   store.dispatch({ type: "" })
-//   expect(wrapper.children().exists()).toBeFalsy()
-// })
+it("renders null when no hydratation", () => {
+  defaultProps.hydratation.done = false
+  const wrapper = mount(<App {...defaultProps} />)
+  expect(wrapper.children().exists()).toBeFalsy()
+})
