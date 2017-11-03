@@ -42,12 +42,10 @@ it("matches snapshot", () => {
   expect(toJson(wrapper)).toMatchSnapshot()
 })
 
-// it("renders children", () => {
-// const wrapper = mount(
-//   <App store={store} options={options} history={history} />
-// )
-// expect(wrapper.children().exists()).toBeTruthy()
-// })
+it("renders children", () => {
+  const wrapper = mount(<App {...defaultProps} />)
+  expect(wrapper.children().exists()).toBeTruthy()
+})
 
 it("renders null when no hydratation", () => {
   defaultProps.hydratation.done = false
