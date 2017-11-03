@@ -9,12 +9,12 @@ it("sets urls", () => {
 })
 
 it("gets", async () => {
-  const ip = await api.get("/")
+  const ip = await api.GET("/")
   expect(ip).toHaveProperty("ip")
 })
 
 it("posts", async () => {
-  const ip = await api.post("/", {})
+  const ip = await api.POST("/", {})
   expect(ip).toHaveProperty("ip")
 })
 
@@ -25,6 +25,6 @@ it("fails parsing json", async () => {
 
 it("fails on bad url", async () => {
   const api = new Api("")
-  const err = await api.get("/")
+  const err = await api.GET("/")
   expect(err).toBeInstanceOf(Error)
 })
