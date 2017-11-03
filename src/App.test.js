@@ -29,9 +29,9 @@ it("shallow renders without crashing", () => {
   shallow(<App {...defaultProps} />)
 })
 
-// it("mount renders without crashing", () => {
-//   mount(<App {...defaultProps} />)
-// })
+it("mount renders without crashing", () => {
+  mount(<App {...defaultProps} />)
+})
 
 // it("render renders without crashing", () => {
 //   render(<App {...defaultProps} />)
