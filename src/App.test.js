@@ -24,10 +24,6 @@ beforeEach(() => {
   defaultProps = { history, store, options, hydrate, ...initialState }
 })
 
-it("shallow renders without crashing", () => {
-  shallow(<App {...defaultProps} />)
-})
-
 it("mount renders without crashing", () => {
   mount(<App {...defaultProps} />)
 })

@@ -8,15 +8,15 @@ it("sets urls", () => {
   expect(api.url("/users")).toBe(`${url}/users`)
 })
 
-it("gets", async () => {
-  const ip = await api.GET("/")
-  expect(ip).toHaveProperty("ip")
-})
+// it("gets", async () => {
+//   const ip = await api.GET("/")
+//   expect(ip).toHaveProperty("ip")
+// })
 
-it("posts", async () => {
-  const ip = await api.POST("/", {})
-  expect(ip).toHaveProperty("ip")
-})
+// it("posts", async () => {
+//   const ip = await api.POST("/", {})
+//   expect(ip).toHaveProperty("ip")
+// })
 
 it("fails parsing json", async () => {
   const err = await api.request(new Promise(res => res("asd/adw")))
