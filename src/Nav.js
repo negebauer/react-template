@@ -1,11 +1,21 @@
 import React, { Component } from "react"
 import PropTypes from "prop-types"
 import { connect } from "react-redux"
-import { Route as RouteDom, Link, Switch, withRouter } from "react-router-dom"
+import {
+  Route as RouteDom,
+  Link,
+  Switch,
+  Redirect,
+  withRouter,
+} from "react-router-dom"
 import { Helmet } from "react-helmet"
 import styled from "styled-components"
 
 import Home from "./screens/Home"
+import About from "./screens/About"
+import Profile from "./screens/Profile"
+import Settings from "./screens/Settings"
+import Dashboard from "./screens/Dashboard"
 import NotFound from "./screens/NotFound"
 
 const siteTitle = title => (title ? `RT | ${title}` : "React Template")
@@ -145,15 +155,21 @@ class Navigator extends Component {
         <Nav>
           <NavLeft>
             <NavLink to="/" label="React Template" exact ignore />
-            <NavLink to="/other1" label="Other 1" />
-            <NavLink to="/other2" label="Other 2" />
+            <NavLink to="/about" label="About" />
+            <NavLink to="/dashboard" label="Dashboard" />
+            <NavLink to="/settings" label="Settings" />
           </NavLeft>
           <NavRight>
-            <NavLink to="/go" label="Accesos" />
+            <NavLink to="/profile/guest" label="Profile" />
           </NavRight>
         </Nav>
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} title="About" />
+          <Route path="/profile/:username" component={Profile} title="Profile" />
+          <Route path="/settings" component={Settings} title="Settings" />
+          <Route path="/dashboard" component={Dashboard} title="Dashboard" />
+          <Redirect from="/home" to="/" />
           <Route component={NotFound} title="Not found" />
         </Switch>
         <Footer>

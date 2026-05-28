@@ -24,6 +24,10 @@ beforeEach(() => {
   defaultProps = { history, store, options, hydrate, ...initialState }
 })
 
+it("is function component", () => {
+  expect(typeof App).toBe('function')
+})
+
 it("mount renders without crashing", () => {
   mount(<App {...defaultProps} />)
 })

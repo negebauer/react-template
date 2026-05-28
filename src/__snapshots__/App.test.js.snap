@@ -229,54 +229,81 @@ exports[`matches snapshot 1`] = `
                                 </Route>
                               </NavLink>
                               <NavLink
-                                label="Other 1"
-                                to="/other1"
+                                label="About"
+                                to="/about"
                               >
                                 <Route
-                                  path="/other1"
+                                  path="/about"
                                 >
                                   <Styled(Link)
                                     className=""
-                                    to="/other1"
+                                    to="/about"
                                   >
                                     <Link
                                       className="sc-gqjmRU eNtcLP"
                                       replace={false}
-                                      to="/other1"
+                                      to="/about"
                                     >
                                       <a
                                         className="sc-gqjmRU eNtcLP"
-                                        href="/other1"
+                                        href="/about"
                                         onClick={[Function]}
                                       >
-                                        Other 1
+                                        About
                                       </a>
                                     </Link>
                                   </Styled(Link)>
                                 </Route>
                               </NavLink>
                               <NavLink
-                                label="Other 2"
-                                to="/other2"
+                                label="Dashboard"
+                                to="/dashboard"
                               >
                                 <Route
-                                  path="/other2"
+                                  path="/dashboard"
                                 >
                                   <Styled(Link)
                                     className=""
-                                    to="/other2"
+                                    to="/dashboard"
                                   >
                                     <Link
                                       className="sc-gqjmRU eNtcLP"
                                       replace={false}
-                                      to="/other2"
+                                      to="/dashboard"
                                     >
                                       <a
                                         className="sc-gqjmRU eNtcLP"
-                                        href="/other2"
+                                        href="/dashboard"
                                         onClick={[Function]}
                                       >
-                                        Other 2
+                                        Dashboard
+                                      </a>
+                                    </Link>
+                                  </Styled(Link)>
+                                </Route>
+                              </NavLink>
+                              <NavLink
+                                label="Settings"
+                                to="/settings"
+                              >
+                                <Route
+                                  path="/settings"
+                                >
+                                  <Styled(Link)
+                                    className=""
+                                    to="/settings"
+                                  >
+                                    <Link
+                                      className="sc-gqjmRU eNtcLP"
+                                      replace={false}
+                                      to="/settings"
+                                    >
+                                      <a
+                                        className="sc-gqjmRU eNtcLP"
+                                        href="/settings"
+                                        onClick={[Function]}
+                                      >
+                                        Settings
                                       </a>
                                     </Link>
                                   </Styled(Link)>
@@ -293,27 +320,27 @@ exports[`matches snapshot 1`] = `
                               className="sc-gZMcBi giNnHm sc-dnqmqq cbdZBN"
                             >
                               <NavLink
-                                label="Accesos"
-                                to="/go"
+                                label="Profile"
+                                to="/profile/guest"
                               >
                                 <Route
-                                  path="/go"
+                                  path="/profile/guest"
                                 >
                                   <Styled(Link)
                                     className=""
-                                    to="/go"
+                                    to="/profile/guest"
                                   >
                                     <Link
                                       className="sc-gqjmRU eNtcLP"
                                       replace={false}
-                                      to="/go"
+                                      to="/profile/guest"
                                     >
                                       <a
                                         className="sc-gqjmRU eNtcLP"
-                                        href="/go"
+                                        href="/profile/guest"
                                         onClick={[Function]}
                                       >
-                                        Accesos
+                                        Profile
                                       </a>
                                     </Link>
                                   </Styled(Link)>
